@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+/* https://picsum.photos/1000/500?random=1 */
+
+body {
+  font-family: "Josefin Sans", serif;
+}
+
+h2 {
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 30px;
+  color: rgb(158, 158, 158);
+  margin: 20px auto;
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+}
+
+.bold-charm {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.normal-charm {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+}
+
+.fontsize-30 {
+  font-size: 30px;
+}
+
+.img-container {
+  background-image: url("https://picsum.photos/1000/500?random=1");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.part {
+  width: 60%;
+  margin: 10px auto;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+#part-with-link > a {
+  background-color: #E9FDF0;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#part-with-link > a:hover {
+  background-color: #7DFFB3;
+}
+
+/* Media queries */
+
+@media(min-width: 1000px) {
+  .img-container {
+    width: 1000px;
+  }
+}
